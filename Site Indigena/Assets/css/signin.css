@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: arial;
+  }
+  
+  #background {
+    position: relative;
+  }
+  
+  .pill {
+    /* class usado para agrupar elementos */
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  #pill-2 {
+    background-color: red;
+    left: 50px;
+    transition: 47ms;
+  }
+  
+  #pill-1 {
+    background-color: blue;
+    right: 50px;
+    transition: 47ms;
+  }
+  
+  #pill-1:hover {
+    box-shadow: 0 0 20px white;
+    transform: scale(1.5, 1.5);
+    transition: 870ms;
+    cursor: pointer;
+  }
+  
+  #pill-2:hover {
+    box-shadow: 0 0 20px white;
+    transform: scale(1.5, 1.5);
+    transition: 870ms;
+    cursor: pointer;
+  }
+  
+  #video-container {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    display: none;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #ffffff;
+  }
+  
+  #my-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #greeting {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    color: #a8bec9;
+    visibility: hidden;
+  }
+  
+  #text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #container-msg1 {
+    position: absolute;
+    left: -16.5%;
+    top: 15.1%;
+    width: 220px;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    padding-top: 1px;
+    margin-bottom: 15px;
+    display: none;
+  }
+  
+  #container-msg2 {
+    position: absolute;
+    left: -15.8%;
+    top: 19.5%;
+    width: 220px;
+    height: 223px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    padding-top: 1px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  #container-msg3 {
+    position: absolute;
+    right: -8%;
+    top: 21%;
+    width: 200px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  #msg1,
+  #msg3 {
+    font-size: 19px;
+    color: #eaebef;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+  
+  #msg2 {
+    font-size: 19px;
+    color: #eaebef;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding: 9px;
+  }
+  
+  #container-msg4 {
+    position: absolute;
+    left: -110%;
+    top: 90%;
+    width: 120vw; /* Para que o card tenha a "largura" total da tela*/
+    height: 103px;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 14px;
+    padding-top: 1px;
+    margin-bottom: 10px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 92px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+  
+  #msg4 {
+    font-size: 18px;
+    text-align: center;
+    margin-left: -51px;
+    margin-top: 8px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding: 4px;
+    color: #c3c1c9;
+    letter-spacing: 0.1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+      0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+      0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+      0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  #login-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 193px;
+    color: #ffffff90;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    color: black;
+  }
+  
+  button.myCard {
+    background-color: transparent;
+    border: none;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  button.myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+  }
+  
+  .frontSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    columns: 3;
+  }
+    
+  .frontSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+    
+  .frontSide,
+  .frontSide::before {
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .backSide, 
+  .backSide::before {
+    background-image: url('../images/backgrounds/signin.igEYttN.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
