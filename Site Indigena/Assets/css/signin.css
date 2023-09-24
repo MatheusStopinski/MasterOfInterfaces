@@ -20,7 +20,9 @@ body {
   padding: 15px;
   width: 100%;
   height: 60px;
+  top: 0px;
   position: fixed;
+  z-index: 3;
 }
 
 .PRINCIPAL{
@@ -34,7 +36,7 @@ body {
 input {
   display: none;
   visibility: hidden;
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
 }
 
 .toggle {
@@ -285,7 +287,7 @@ img{
   border-radius: 0 45% 45% 0;
   position: relative;  
   margin-left: 2px;
-  top: -11.7px;
+  top: -11.5px;
   left: 11.3px;
   text-align: center;
   cursor: pointer;
@@ -460,3 +462,165 @@ p {
   bottom: -30px;
   left: -4px;
 }
+
+/* --------------------------  */
+
+.banner {
+  background-image: url(https://i.imgur.com/ZrN14Cs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;  
+  color: #fff;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  border: none; 
+}
+
+.india {
+  position: absolute;
+  top: 165.4px;
+  left: -49%; /* Inicialmente, a imagem estará fora do banner à esquerda */
+  transform: scale(0.9);
+  transition: left 2.5s ease-in-out;
+  border-radius: 0px;
+}
+
+.banner:hover .india {
+  left: -8%; /* Quando o mouse passa sobre o banner, a imagem entra de lado */
+}
+
+h2 {
+  position: absolute;
+  top: -142px;
+  font-family: "Montserrat";
+  font-size: 25px;  
+  text-align: starr;
+  margin: 8px;
+  padding: 8px;
+  right: 280px;
+  background: rgb(109,172,17);
+  background: linear-gradient(151deg, rgba(109,172,17,0.7036878692437403) 15%, rgba(32,70,35,0.5701474965729328) 44%, rgba(73,101,32,0.8713897325977775) 87%);
+  border-radius: 10px;
+  transition: top 2.5s ease-in-out;  
+}
+
+.banner:hover h2 {
+  top: 142px; /* Quando o mouse passa sobre o banner, a imagem entra de lado */
+}
+
+.music {
+  position: relative;
+  background-color: #00000089;
+  padding: 11px;
+  margin: 3px;
+  height: 15px;
+  width: 185px;
+  bottom: -400px;
+  left: 475px;   
+  border-radius: 20px; 
+  border: 3px ridge green;  
+  transition: bottom 2.5s ease-in-out;
+}
+
+.banner:hover .music {
+  bottom: -320px; 
+}
+
+.fa-chevron-left {
+  color: #30c611;
+  position: absolute;
+  bottom: 3px;
+  right: 150px;
+  cursor: pointer; 
+  text-shadow: 2px 2px 2px #000;
+  transform: scale(0.8);
+}
+
+.fa-chevron-left:hover {
+  color: #32b714;  
+}
+
+.fa-chevron-right {
+  color: #30c611;
+  position: absolute;
+  bottom: 3px;
+  left: 111px;
+  cursor: pointer;  
+  text-shadow: 2px 2px 2px #000;
+  transform: scale(0.8);
+}
+
+.fa-chevron-right:hover {
+  color: #32b714;  
+}
+
+.fa-play {
+  color: #30c611;
+  position: absolute;
+  bottom: 2px;
+  left: 63px;
+  cursor: pointer;
+  transform: scale(0.7);
+  text-shadow: 2px 2px 2px #000;
+}
+
+.fa-play:hover {
+  color: #32b714;  
+}
+
+.fa-pause {
+  color: #30c611;
+  position: absolute;
+  bottom: 2px;
+  left: 62px;
+  cursor: pointer;
+  transform: scale(0.7);
+  text-shadow: 2px 2px 2px #000;
+}
+
+.fa-pause:hover {
+  color: #32b714;  
+}
+
+.fa-music {
+  color: #30c611;
+  position: absolute;
+  bottom: 2px;
+  left: 146px;
+  cursor: pointer;
+  transform: scale(0.7);
+  text-shadow: 2px 2px 2px #000;
+}
+
+.fa-music:hover {
+  color: #32b714;  
+}
+
+.Oferta {
+  z-index: 2;
+  width: 200px;
+  height: 345px;
+  background-color: #AAA77699; 
+  position: absolute;
+  right: -250px;
+  top: 58px;
+  transition: right 2.5s ease-in-out;
+}
+
+.banner:hover .Oferta {
+  right: 25px;
+}
+
+.Promo {
+  position: absolute;
+  display: flex;
+  border-radius: 0px;
+  transform: scale(0.9);
+  margin-top: -5px;  
+}
+
