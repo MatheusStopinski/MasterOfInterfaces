@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Indigena Game</title>
+</head>
+
+<body>
+    
+    <h1 class="title">Jogo da Memoria</h1>
+    
+    
+    <div class="overlay-text visible">
+      Clique!
+    </div>
+    
+    
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER
+      <span class="overlay-text-small">Click para Restart</span>
+    </div>
+    
+    
+    <div id="victory-text" class="overlay-text">
+      VITORIA
+      <span class="overlay-text-small">Receba o cupom 50% off: <p class="sublinhado">"008285"</p></span>
+    </div>
+    
+    
+     <div class="game-container">
+      
+       <div class="game-info-container">
+        
+        <div class="game-info">
+          Time <span id="time-remaining">93</span>
+        </div>
+        
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
+        
+      </div>    
+       
+       
+       
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M1">        
+          <img class="card-value" src="https://i.imgur.com/kmvOxo2.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M2">        
+          <img class="card-value" src="https://i.imgur.com/ilwRIih.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M3">        
+          <img class="card-value" src="https://i.imgur.com/gRwQZyQ.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M4">        
+          <img class="card-value" src="https://i.imgur.com/tBrfC8J.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M5">        
+          <img class="card-value" src="https://i.imgur.com/q6PvQvf.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M6">        
+          <img class="card-value" src="https://i.imgur.com/2pgPOCD.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M7">        
+          <img class="card-value" src="https://i.imgur.com/t4ivW7b.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M8">        
+          <img class="card-value" src="https://i.imgur.com/zsyBhi0.png">
+        </div>
+      </div> 
+       
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M1">        
+          <img class="card-value" src="https://i.imgur.com/kmvOxo2.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M2">        
+          <img class="card-value" src="https://i.imgur.com/ilwRIih.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M3">        
+          <img class="card-value" src="https://i.imgur.com/gRwQZyQ.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M4">        
+          <img class="card-value" src="https://i.imgur.com/tBrfC8J.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M5">        
+          <img class="card-value" src="https://i.imgur.com/q6PvQvf.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M6">        
+          <img class="card-value" src="https://i.imgur.com/2pgPOCD.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M7">        
+          <img class="card-value" src="https://i.imgur.com/t4ivW7b.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M8">        
+          <img class="card-value" src="https://i.imgur.com/zsyBhi0.png">
+        </div>
+      </div> 
+       
+           <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M9">        
+          <img class="card-value" src="https://i.imgur.com/1MsyKKu.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M9">        
+          <img class="card-value" src="https://i.imgur.com/1MsyKKu.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M10">        
+          <img class="card-value" src="https://i.imgur.com/Hxtopsl.png">
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-back card-face">     
+          <img class="card-value" src="https://i.imgur.com/Rr1LMgP.png">
+        </div>            
+        <div class="card-front card-face" data-card-id="M10">        
+          <img class="card-value" src="https://i.imgur.com/Hxtopsl.png">
+        </div>
+      </div> 
+      
+    </div>
+    
+   <script src="../js/index.js"></script>
+
+  </body> 
+
+</html>

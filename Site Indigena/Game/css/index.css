@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+@font-face {
+  font-family: "Dancing+Script";  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  background: radial-gradient(#008423, #034f16);
+}
+
+.title {
+  color: #F5B785;
+  font-family: "Dancing+Script";
+  font-weight: 600;
+  text-align: center;
+  font-size: 2em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+  font-size: 1em;
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #084417;
+  font-family: "Dancing+Script";
+  font-size: 1em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 8px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: "Dancing+Script";
+  font-weight: 600;
+  color: #FFBB89;
+  font-size: 1.7em;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;  
+}
+
+.card:hover {
+  cursor: grabbing;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+  
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(0)
+}
+
+.card.matched .card-value {
+  animation: fade 6s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+
+.overlay-text-small {
+  font-size: .2em;
+}
+
+
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 10em;
+  }
+}
+
+.card-back {
+  background-color: #008423;
+  border-color: #072b10;
+}
+
+.card-front {
+  background-color: #008423;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.card-value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(1.0);
+}
+
+.card-back:hover .card-value {
+  transform: scale(1.1);
+}
+
+.sublinhado{
+  text-decoration: underline;
+  font-size: 40px;
+  position: relative;
+  left: 135px;
+  justify-content: center;
+  align-items: center;  
+}
