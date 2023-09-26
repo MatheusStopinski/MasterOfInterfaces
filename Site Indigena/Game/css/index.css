@@ -45,6 +45,10 @@ body {
   font-size: 1em;
 }
 
+.sizet {
+  font-size: 110px;
+}
+
 .game-container {
   display: grid;
   grid-template-columns: repeat(5, auto);
