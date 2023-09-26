@@ -32,7 +32,7 @@ background: radial-gradient(circle, rgba(17,104,40,0.23529411764705888) 7%, rgba
 }
 
 body::-webkit-scrollbar-thumb {
- background-image: url('https://i.imgur.com/8QRpPd1.png');
+ background-image: url('../images/backgrounds/ObjetoP.png');
   background-size: cover;
   opacity: 0.01; 
   transform: scale(0.1);
@@ -489,7 +489,7 @@ p {
 }
 
 .banner {
-  background-image: url(https://i.imgur.com/ZrN14Cs.png);
+  background-image: url("../images/backgrounds/BannerFloresta.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -864,7 +864,7 @@ H3 {
 }
  
 .p1:hover {
-  background-image: url("https://cdn.vnda.com.br/1200x/tucumbrasil/2020/12/18/15_12_9_910_bannerscategoriasCASAtexto1.png?v=1691676541");
+  background-image: url("../images/backgrounds/ObjetoV.jpg");
 }
 
 .fix-top {
@@ -1149,7 +1149,7 @@ h4{
   cursor: pointer;
   margin: 10px;
   margin-top: 95px;
-  background-image: url('https://i.imgur.com/v9saswN.png');
+  background-image: url('../images/backgrounds/B1.png');
   background-size: cover;
 }
 
@@ -1163,7 +1163,7 @@ h4{
   cursor: pointer;
   margin: 10px;
   margin-top: 95px;
-  background-image: url('https://i.imgur.com/xI7KJsj.png');
+  background-image: url('../images/backgrounds/B2.png');
   background-size: cover;  
 }
 
@@ -1177,7 +1177,7 @@ h4{
   cursor: pointer;
   margin: 10px;
   margin-top: 95px;
-  background-image: url('https://i.imgur.com/65N2Reo.png');
+  background-image: url('../images/backgrounds/B3.png');
   background-size: cover;  
 }
 
@@ -1191,7 +1191,7 @@ h4{
   cursor: pointer;
   margin: 10px;
   margin-top: 95px;
-  background-image: url('https://i.imgur.com/FGzSPfo.png');
+  background-image: url('../images/backgrounds/B4.png');
   background-size: cover;  
 }
 
@@ -1407,7 +1407,7 @@ margin-left: -33px;
 } 
 
 .pimg {
-  background-image: url('https://i.imgur.com/hJzZ6E2.png'); 
+  background-image: url('../images/backgrounds/FinalQ.png'); 
   background-size: cover;
   position: relative;
   bottom: 50px;
