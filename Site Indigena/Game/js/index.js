@@ -5,7 +5,7 @@ class AudioController {
         this.matchSound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/match.wav');
         this.victorySound = new Audio('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/victory.wav');
         this.gameOverSound = new Audio('https://65381g.ha.azioncdn.net/b/5/f/e/matheus-stopinski-snapinstaio-super-mario-bros-game-over-song-320-kbps-95f39f01.mp3');
-        this.bgMusic.volume = 0.4;
+        this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
     startMusic() {
@@ -155,7 +155,7 @@ if (document.readyState == 'loading') {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MixOrMatch(43, cards);
+    let game = new MixOrMatch(50, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
