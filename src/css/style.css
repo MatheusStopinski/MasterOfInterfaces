@@ -31,7 +31,7 @@ main::after{
 .conteudo{
     position: absolute;
     top: 0;
-    left: 120px;    
+    left: 100px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@ main::after{
 
 .nome_personagem{
     color: white;
-    font-size: 51px;
+    font-size: 37px;
     font-family: "Secular One";
     font-weight: 400;
     margin-bottom: 20px;
@@ -51,7 +51,7 @@ main::after{
 
 .descricao{
     color: white;
-    font-size: 27px;
+    font-size: 20px;
     font-family: "Rubik";
     font-weight: 400;
     line-height: 24.3px;
@@ -62,10 +62,10 @@ main::after{
     background-size: cover;
     height: 100px;
     width: 200px;
-    margin-top: 10px;
-    margin-bottom: 55px;
-    margin-left: 44px;
-    transform: scale(1.5);
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 18px;
+    transform: scale(1.2);
 }
 
 .botoes{
@@ -79,13 +79,20 @@ main::after{
     width: 180px;
     justify-content: center;
     align-items: center;
-    gap: 11px; /*só pode usar quando utiliza o display flex */
+    gap: 11px; /*só pode usar quando utiliza o display flex */    
+}
+
+.margin {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .botao{
     cursor: pointer;
     border: none;
-    background: none;    
+    background: #000;  
+    border-radius: 50%;
+    transform: scale(0.8);
 }
 
 .botoes .botao img{
@@ -93,7 +100,6 @@ main::after{
 }
 
 .botoes .botao.selecionado{
-    transform: scale(1.2);
-    box-shadow: 0 0 10px #d9d9d9;
-    border-radius: 50%;
+    transform: scale(1);
+    box-shadow: 0 0 17px 1px #d9d9d9;
 }
