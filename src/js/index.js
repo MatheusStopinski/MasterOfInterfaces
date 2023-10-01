@@ -1,17 +1,25 @@
-const botoes = document.querySelectorAll('.botao');
+const botoes = document.querySelectorAll(".botao");
 const personagens = document.querySelectorAll(".personagem");
-const personagemSelecionado = document.querySelector(".personagem.selecionado");
-const botaoSelecionado = document.querySelector(".botao.selecionado");
 
-botoes.forEach(botao, indice) => {
+let personagemSelecionado = document.querySelector(".personagem.selecionado");
+let botaoSelecionado = document.querySelector(".botao.selecionado");
+
+botoes.forEach((botao, indice) => {
     botao.addEventListener("click", () => {
-        botaoSelecionado.classList.remove("selecionado");
-        botao.classList.add("selecionado");
-     
-     personagemSelecionado.classList.remove("selecionado");   
+        // Remove a classe 'selecionado' dos elementos anteriores
+        if (botaoSelecionado) {
+            botaoSelecionado.classList.remove("selecionado");
+        }
+        if (personagemSelecionado) {
+            personagemSelecionado.classList.remove("selecionado");
+        }
 
-    personagens[indice].classList.add("selecionado");
+        // Adiciona a classe 'selecionado' ao botão e ao personagem clicados
+        botao.classList.add("selecionado");
+        personagens[indice].classList.add("selecionado");
+
+        // Atualiza as referências dos elementos selecionados
+        botaoSelecionado = botao;
+        personagemSelecionado = personagens[indice];
     });
 });
-
-
