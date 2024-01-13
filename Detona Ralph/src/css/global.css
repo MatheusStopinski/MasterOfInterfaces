@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
+}
+
+.personagem2{
+    background-image: url('../images/Personagem2.png');
+    display: flex;
+    position: absolute;    
+    top: -230px;
+    left: -29px;
+    height: 550px;
+    width: 300px; 
+    z-index: 1;
+    transform: scale(0.19);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 5px solid #daa520;
+}
+
+.panel {
+    margin-top: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 4px ridge #000000;
+    background-color: #10e79ffa;
+    box-shadow: 0px 0px 25px 4px #ff0000db, 0px 0px 10px 5px inset #000000e6;
+    cursor: url('../images/mira.png') 10 10, auto;
+}
+
+.enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+    transform: scale(1.09);
+    background-color: #13E39C40;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  Fiz asim só pra aprender  */
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin: 0.6rem 0rem 0.7rem 0rem;
+}
+
+.menu-time h2:nth-child(1),
+.menu-score h2:nth-child(1) {
+    margin-top: 1rem;
+    color: #ff0000;
+}
+
+/* h2 {
+    font-size: 25px;
+    margin: 10px 0px 5px 0px;
+} */
