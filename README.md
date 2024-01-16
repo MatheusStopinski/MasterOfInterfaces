@@ -3,6 +3,5 @@
 <br>
 <img align="center" src="https://i.imgur.com/JVLKJIe.png" alt=""> 
 <br> 
-<img align="center center" src="https://i.imgur.com/Zi7HBrj.png" alt="Fazendo o efeito do <hr> funcionar de um jeito ou de outro!">
-<br>
+
 
