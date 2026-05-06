@@ -1,5 +1,7 @@
 # Yu-Gi-Oh | Jo-ken-po Edition(1.0)
 
+<h3 align="center"> <a href="">Click here !✅👁‍🗨</a>
+
 🎮 Jogo de JoKenPo, mergulhando nas tecnologias HTML, CSS e JavaScript.
 
 Como Jogar
