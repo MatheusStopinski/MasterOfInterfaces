@@ -45,7 +45,7 @@ const cardData = [ // Enumerei as cartas para dar um sentido.
     {
         id: 1,
         name: "Dark Magician",
-        type: "Rock",
+        type: "Pedra",
         img: `${pathImages}magician.png`,
         winOf: [2],
         loseOf: [0],
@@ -53,7 +53,7 @@ const cardData = [ // Enumerei as cartas para dar um sentido.
     {
         id: 2,
         name: "Exodia",
-        type: "Scissors",
+        type: "Tesoura",
         img: `${pathImages}exodia.png`,
         winOf: [0],
         loseOf: [1],
@@ -108,8 +108,8 @@ async function setCardsField(cardId) {
 
 async function hiddenCardDetails() {
     state.cardSprites.avatar.src = "";
-    state.cardSprites.name.innerText = "Rock, Papel, Scissors";
-    state.cardSprites.type.innerText = "- ? -";
+    state.cardSprites.name.innerText = "Pedra, Papel, Tesoura";
+    state.cardSprites.type.innerText = "- ??? -";
 }
 
 async function updateScore(){
@@ -150,7 +150,7 @@ async function removeAllCardsImages(){
 async function drawSelectCard(index) {
     state.cardSprites.avatar.src = cardData[index].img;
     state.cardSprites.name.innerText = cardData[index].name;
-    state.cardSprites.type.innerText = "Attibute: " + cardData[index].type;
+    state.cardSprites.type.innerText = cardData[index].type;
 }
 
 async function drawCards(cardNumbers, fieldSide) {

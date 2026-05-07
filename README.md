@@ -3,6 +3,10 @@
 <h1 align="center"> <a href="https://matheusstopinski.github.io/MasterOfInterfaces/">Click here !✅👁‍🗨</a></h1>
 <br> <br> <br>
 🎮 Jogo de JoKenPo, mergulhando nas tecnologias HTML, CSS e JavaScript.
+=======
+
+🎮 Desenvolvi um divertido jogo de JoKenPo, mergulhando nas tecnologias HTML, CSS e JavaScript.
+>>>>>>> 510d241 (Ajustando pequenas altarações parte 1r)
 
 Como Jogar
 Abra o link em um navegador web compatível.

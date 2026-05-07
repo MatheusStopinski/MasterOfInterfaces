@@ -1,0 +1,26 @@
+@media screen and (max-width: 845px){
+    
+.container {
+    display: flex;
+
+}
+
+.container__left {
+    display: none;
+}
+
+.container__right {
+    width: 101%;    
+}
+
+.card {
+    margin-left: -15px;
+    margin-right: 17px;
+}
+
+.bg-video{
+    width: 100%;
+    height: auto;
+}
+
+}
