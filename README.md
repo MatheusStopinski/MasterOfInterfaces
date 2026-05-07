@@ -6,7 +6,6 @@
 =======
 
 🎮 Desenvolvi um divertido jogo de JoKenPo, mergulhando nas tecnologias HTML, CSS e JavaScript.
->>>>>>> 510d241 (Ajustando pequenas altarações parte 1r)
 
 Como Jogar
 Abra o link em um navegador web compatível.
